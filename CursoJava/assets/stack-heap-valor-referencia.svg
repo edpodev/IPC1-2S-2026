@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-label="Diagrama que compara variables primitivas, copiadas por valor en el Stack, contra arreglos, copiados por referencia y compartiendo el mismo objeto en el Heap. int a = 5; int b = a; b = 99; deja a y b independientes. int[] arr1 = {1,2,3}; int[] arr2 = arr1; arr2[0] = 99; deja arr1 y arr2 apuntando al mismo arreglo, por lo que ambos ven el 99.">
+  <title>Java: variables primitivas (paso por valor) vs arreglos (paso por referencia) — Stack y Heap</title>
+
+  <rect x="0" y="0" width="960" height="640" fill="#ffffff"/>
+
+  <defs>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <text x="480" y="34" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a">
+    Variables en Java: Stack vs Heap
+  </text>
+  <text x="480" y="56" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#475569">
+    Tipos primitivos se copian por valor. Arreglos y objetos se copian por referencia.
+  </text>
+
+  <line x1="480" y1="72" x2="480" y2="560" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 5"/>
+
+  <!-- ===================== LEFT: primitives ===================== -->
+
+  <text x="40" y="90" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" fill="#0f172a">int a = 5;</text>
+  <text x="40" y="110" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" fill="#0f172a">int b = a;   b = 99;</text>
+
+  <rect x="40" y="135" width="400" height="210" rx="8" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+  <text x="56" y="158" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">STACK — main()</text>
+
+  <!-- box a -->
+  <rect x="70" y="180" width="150" height="60" rx="6" fill="#eef2ff" stroke="#334155" stroke-width="1.5"/>
+  <text x="80" y="196" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#475569">a : int</text>
+  <text x="145" y="222" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="20" font-weight="700" fill="#0f172a">5</text>
+
+  <!-- box b -->
+  <rect x="250" y="180" width="150" height="60" rx="6" fill="#eef2ff" stroke="#334155" stroke-width="1.5"/>
+  <text x="260" y="196" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#475569">b : int</text>
+  <text x="325" y="222" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="20" font-weight="700" fill="#0f172a">99</text>
+
+  <text x="240" y="270" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#334155">"b = a" copió el valor 5.</text>
+  <text x="240" y="288" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#334155">Cambiar b a 99 NO afecta a a.</text>
+  <text x="240" y="306" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#334155">Son dos copias independientes.</text>
+
+  <!-- ===================== RIGHT: references ===================== -->
+
+  <text x="500" y="90" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" fill="#0f172a">int[] arr1 = {1, 2, 3};</text>
+  <text x="500" y="110" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" fill="#0f172a">int[] arr2 = arr1;  arr2[0] = 99;</text>
+
+  <!-- stack frame for references -->
+  <rect x="500" y="135" width="180" height="210" rx="8" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+  <text x="514" y="158" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">STACK</text>
+
+  <rect x="520" y="180" width="140" height="50" rx="6" fill="#eef2ff" stroke="#334155" stroke-width="1.5"/>
+  <text x="530" y="196" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#475569">arr1 : int[]</text>
+  <text x="590" y="220" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" font-weight="700" fill="#2563eb">●→</text>
+
+  <rect x="520" y="250" width="140" height="50" rx="6" fill="#eef2ff" stroke="#334155" stroke-width="1.5"/>
+  <text x="530" y="266" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#475569">arr2 : int[]</text>
+  <text x="590" y="290" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" font-weight="700" fill="#2563eb">●→</text>
+
+  <!-- heap -->
+  <rect x="740" y="135" width="180" height="210" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="754" y="158" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1d4ed8">HEAP</text>
+  <text x="754" y="176" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#1d4ed8">objeto int[3]</text>
+
+  <!-- array cells -->
+  <rect x="754" y="192" width="46" height="46" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="800" y="192" width="46" height="46" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="846" y="192" width="46" height="46" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="777" y="221" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" font-weight="700" fill="#0f172a">99</text>
+  <text x="823" y="221" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" font-weight="700" fill="#0f172a">2</text>
+  <text x="869" y="221" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" font-weight="700" fill="#0f172a">3</text>
+  <text x="777" y="252" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#64748b">[0]</text>
+  <text x="823" y="252" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#64748b">[1]</text>
+  <text x="869" y="252" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#64748b">[2]</text>
+
+  <!-- arrows from arr1/arr2 to the single heap object -->
+  <path d="M660,205 C 700,205 700,215 754,215" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <path d="M660,275 C 705,275 705,235 754,235" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <text x="700" y="198" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#2563eb">referencia</text>
+  <text x="705" y="298" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#2563eb">misma referencia</text>
+
+  <text x="810" y="270" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#334155">arr1 y arr2 apuntan al</text>
+  <text x="810" y="288" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#334155">MISMO objeto en el heap.</text>
+  <text x="810" y="306" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#334155">"arr2[0]=99" también lo ve arr1.</text>
+
+  <!-- bottom caption -->
+  <rect x="40" y="380" width="880" height="230" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="60" y="410" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">¿Por qué pasa esto?</text>
+  <text x="60" y="436" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#334155">• Un tipo primitivo (int, double, char, boolean…) guarda su valor directamente en el stack.</text>
+  <text x="60" y="458" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#334155">   Al hacer "b = a" se copia el número; a partir de ahí a y b viven en cajas separadas.</text>
+  <text x="60" y="490" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#334155">• Un arreglo (o cualquier objeto) es un tipo de referencia: la variable solo guarda una</text>
+  <text x="60" y="512" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#334155">   dirección hacia el objeto real, que vive en el heap. "arr2 = arr1" copia esa dirección,</text>
+  <text x="60" y="534" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#334155">   no el arreglo. Por eso modificar el arreglo desde una variable se ve desde la otra.</text>
+  <text x="60" y="566" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#334155">• Para obtener una copia real e independiente de un arreglo se usa, por ejemplo,</text>
+  <text x="60" y="588" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#0f172a">   int[] copiaReal = java.util.Arrays.copyOf(arr1, arr1.length);</text>
+</svg>

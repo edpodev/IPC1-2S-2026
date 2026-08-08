@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 460" role="img" aria-label="Comparacion de dos diagramas de flujo: un if evalua la condicion una sola vez y termina; un while evalua la condicion, ejecuta el bloque, y regresa a evaluar la condicion otra vez, repitiendose hasta que sea falsa. La unica diferencia estructural es la flecha que regresa del bloque a la pregunta.">
+  <title>if vs. while: la única diferencia es la flecha que se devuelve</title>
+
+  <rect x="0" y="0" width="820" height="460" fill="#ffffff"/>
+
+  <defs>
+    <marker id="arrowHead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#334155"/>
+    </marker>
+    <marker id="arrowHeadBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <text x="190" y="24" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">SI (if)</text>
+  <text x="610" y="24" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">MIENTRAS (while)</text>
+
+  <!-- ===================== LEFT: if ===================== -->
+
+  <rect x="140" y="40" width="100" height="36" rx="18" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+  <text x="190" y="63" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#0f172a">inicio</text>
+  <line x1="190" y1="76" x2="190" y2="106" stroke="#334155" stroke-width="1.5" marker-end="url(#arrowHead)"/>
+
+  <polygon points="190,106 260,150 190,194 120,150" fill="#eef2ff" stroke="#334155" stroke-width="1.5"/>
+  <text x="190" y="146" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#0f172a">¿condición</text>
+  <text x="190" y="160" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#0f172a">verdadera?</text>
+
+  <line x1="260" y1="150" x2="298" y2="150" stroke="#334155" stroke-width="1.5" marker-end="url(#arrowHead)"/>
+  <text x="272" y="140" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#334155">true</text>
+  <rect x="298" y="126" width="130" height="48" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+  <text x="363" y="154" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#0f172a">ejecuta el bloque</text>
+
+  <path d="M363,174 C 363,230 190,230 190,254" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrowHead)"/>
+  <line x1="190" y1="194" x2="190" y2="254" stroke="#334155" stroke-width="1.5" marker-end="url(#arrowHead)"/>
+  <text x="205" y="222" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#334155">false</text>
+
+  <line x1="190" y1="254" x2="190" y2="284" stroke="#334155" stroke-width="1.5" marker-end="url(#arrowHead)"/>
+  <rect x="140" y="284" width="100" height="36" rx="18" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+  <text x="190" y="307" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#0f172a">fin</text>
+
+  <text x="190" y="345" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">se pregunta una sola vez</text>
+
+  <!-- ===================== RIGHT: while ===================== -->
+
+  <rect x="560" y="40" width="100" height="36" rx="18" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+  <text x="610" y="63" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#0f172a">inicio</text>
+  <line x1="610" y1="76" x2="610" y2="106" stroke="#334155" stroke-width="1.5" marker-end="url(#arrowHead)"/>
+
+  <polygon points="610,106 680,150 610,194 540,150" fill="#eef2ff" stroke="#334155" stroke-width="1.5"/>
+  <text x="610" y="146" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#0f172a">¿condición</text>
+  <text x="610" y="160" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#0f172a">verdadera?</text>
+
+  <line x1="680" y1="150" x2="710" y2="150" stroke="#334155" stroke-width="1.5" marker-end="url(#arrowHead)"/>
+  <text x="695" y="140" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#334155">true</text>
+  <rect x="710" y="126" width="100" height="48" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+  <text x="760" y="146" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#0f172a">ejecuta el</text>
+  <text x="760" y="160" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#0f172a">bloque</text>
+
+  <!-- loop-back arrow: the key visual difference -->
+  <path d="M785,126 C 800,95 700,80 630,100" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowHeadBlue)"/>
+  <text x="705" y="82" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#2563eb">vuelve a preguntar</text>
+
+  <line x1="610" y1="194" x2="610" y2="254" stroke="#334155" stroke-width="1.5" marker-end="url(#arrowHead)"/>
+  <text x="622" y="222" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#334155">false</text>
+
+  <line x1="610" y1="254" x2="610" y2="284" stroke="#334155" stroke-width="1.5" marker-end="url(#arrowHead)"/>
+  <rect x="560" y="284" width="100" height="36" rx="18" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+  <text x="610" y="307" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#0f172a">fin</text>
+
+  <text x="610" y="345" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">se repite mientras sea true</text>
+
+  <!-- shared caption -->
+  <line x1="410" y1="20" x2="410" y2="360" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/>
+  <rect x="60" y="380" width="700" height="60" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="410" y="405" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#334155">La única diferencia estructural es esa flecha azul que regresa.</text>
+  <text x="410" y="424" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#334155">Un if pregunta una vez; un while vuelve a preguntar cada vez que termina el bloque.</text>
+</svg>

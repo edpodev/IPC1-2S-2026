@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" role="img" aria-label="Comparacion entre un arreglo de una dimension, accedido con un solo indice como edades[2], y una matriz de dos dimensiones, accedida con dos indices como tablero[1][2]. El arreglo se dibuja como una fila de cinco casillas numeradas del 0 al 4. La matriz se dibuja como una cuadricula de 3 por 3 con indices de fila y columna, resaltando la celda fila 1 columna 2.">
+  <title>Arreglo (1 índice) vs. matriz (2 índices)</title>
+
+  <rect x="0" y="0" width="820" height="420" fill="#ffffff"/>
+
+  <defs>
+    <marker id="arrowB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <line x1="400" y1="20" x2="400" y2="400" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- ===================== LEFT: arreglo ===================== -->
+  <text x="196" y="34" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">arreglo — 1 índice</text>
+
+  <!-- 5 boxes: values 23,45,31,19,62 -->
+  <g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" font-weight="700" fill="#0f172a">
+    <rect x="40" y="80" width="56" height="56" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+    <text x="68" y="114" text-anchor="middle">23</text>
+    <rect x="104" y="80" width="56" height="56" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+    <text x="132" y="114" text-anchor="middle">45</text>
+    <rect x="168" y="80" width="56" height="56" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>
+    <text x="196" y="114" text-anchor="middle" fill="#1d4ed8">31</text>
+    <rect x="232" y="80" width="56" height="56" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+    <text x="260" y="114" text-anchor="middle">19</text>
+    <rect x="296" y="80" width="56" height="56" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+    <text x="324" y="114" text-anchor="middle">62</text>
+  </g>
+
+  <g font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">
+    <text x="68" y="153">0</text>
+    <text x="132" y="153">1</text>
+    <text x="196" y="153" fill="#1d4ed8" font-weight="700">2</text>
+    <text x="260" y="153">3</text>
+    <text x="324" y="153">4</text>
+  </g>
+
+  <line x1="196" y1="196" x2="196" y2="140" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arrowB)"/>
+  <text x="196" y="216" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12.5" fill="#1d4ed8">edades[2] = 31</text>
+
+  <text x="196" y="260" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">solo hace falta saber "cuál posición"</text>
+
+  <!-- ===================== RIGHT: matriz ===================== -->
+  <text x="616" y="34" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">matriz — 2 índices</text>
+
+  <!-- column headers -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">
+    <text x="545" y="66">col 0</text>
+    <text x="601" y="66">col 1</text>
+    <text x="657" y="66">col 2</text>
+  </g>
+  <!-- row headers -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="end">
+    <text x="510" y="102">fila 0</text>
+    <text x="510" y="158">fila 1</text>
+    <text x="510" y="214">fila 2</text>
+  </g>
+
+  <g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="15" font-weight="700" fill="#0f172a">
+    <rect x="520" y="76" width="50" height="50" rx="5" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+    <text x="545" y="107" text-anchor="middle">1</text>
+    <rect x="576" y="76" width="50" height="50" rx="5" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+    <text x="601" y="107" text-anchor="middle">2</text>
+    <rect x="632" y="76" width="50" height="50" rx="5" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+    <text x="657" y="107" text-anchor="middle">3</text>
+
+    <rect x="520" y="132" width="50" height="50" rx="5" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+    <text x="545" y="163" text-anchor="middle">4</text>
+    <rect x="576" y="132" width="50" height="50" rx="5" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+    <text x="601" y="163" text-anchor="middle">5</text>
+    <rect x="632" y="132" width="50" height="50" rx="5" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>
+    <text x="657" y="163" text-anchor="middle" fill="#1d4ed8">6</text>
+
+    <rect x="520" y="188" width="50" height="50" rx="5" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+    <text x="545" y="219" text-anchor="middle">7</text>
+    <rect x="576" y="188" width="50" height="50" rx="5" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+    <text x="601" y="219" text-anchor="middle">8</text>
+    <rect x="632" y="188" width="50" height="50" rx="5" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+    <text x="657" y="219" text-anchor="middle">9</text>
+  </g>
+
+  <line x1="700" y1="157" x2="686" y2="157" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arrowB)"/>
+  <text x="706" y="153" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12.5" fill="#1d4ed8">tablero[1][2]</text>
+  <text x="706" y="169" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12.5" fill="#1d4ed8">= 6</text>
+
+  <text x="616" y="260" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">hace falta saber "cuál fila" y "cuál columna"</text>
+
+  <!-- shared bottom caption -->
+  <rect x="60" y="300" width="700" height="70" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="410" y="326" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#334155">Una matriz no es un tipo nuevo: es un arreglo cuyos elementos son, a su vez, arreglos.</text>
+  <text x="410" y="346" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#334155">Por eso "tablero[1]" ya es una fila completa, y "tablero[1][2]" es un elemento dentro de esa fila.</text>
+</svg>

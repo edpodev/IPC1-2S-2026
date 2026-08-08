@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" role="img" aria-label="Comparacion a escala del espacio en memoria de los tipos primitivos numericos de Java: byte 1 byte, short y char 2 bytes, int y float 4 bytes, long y double 8 bytes. Boolean y String se muestran aparte porque no encajan en esta comparacion de tamano fijo.">
+  <title>Tamaño en memoria de los tipos primitivos de Java, a escala</title>
+
+  <rect x="0" y="0" width="760" height="460" fill="#ffffff"/>
+
+  <text x="380" y="34" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a">Cuánto espacio ocupa cada tipo primitivo</text>
+  <text x="380" y="54" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569">1 byte = 8 bits · las barras están a escala entre sí</text>
+
+  <!-- rows: label right-aligned at x=190, bar starts x=200 -->
+  <!-- byte 1B -->
+  <text x="185" y="87" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#0f172a">byte</text>
+  <rect x="200" y="74" width="14" height="24" rx="3" fill="#2563eb"/>
+  <text x="224" y="91" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">1 byte (8 bits)</text>
+
+  <!-- short 2B -->
+  <text x="185" y="127" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#0f172a">short</text>
+  <rect x="200" y="114" width="28" height="24" rx="3" fill="#2563eb"/>
+  <text x="238" y="131" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">2 bytes (16 bits)</text>
+
+  <!-- char 2B -->
+  <text x="185" y="167" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#0f172a">char</text>
+  <rect x="200" y="154" width="28" height="24" rx="3" fill="#2563eb"/>
+  <text x="238" y="171" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">2 bytes (16 bits) — un carácter Unicode</text>
+
+  <!-- int 4B -->
+  <text x="185" y="207" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#0f172a">int</text>
+  <rect x="200" y="194" width="56" height="24" rx="3" fill="#2563eb"/>
+  <text x="266" y="211" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">4 bytes (32 bits)</text>
+
+  <!-- float 4B -->
+  <text x="185" y="247" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#0f172a">float</text>
+  <rect x="200" y="234" width="56" height="24" rx="3" fill="#2563eb"/>
+  <text x="266" y="251" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">4 bytes (32 bits) — decimal, poca precisión</text>
+
+  <!-- long 8B -->
+  <text x="185" y="287" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#0f172a">long</text>
+  <rect x="200" y="274" width="112" height="24" rx="3" fill="#2563eb"/>
+  <text x="322" y="291" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">8 bytes (64 bits)</text>
+
+  <!-- double 8B -->
+  <text x="185" y="327" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#0f172a">double</text>
+  <rect x="200" y="314" width="112" height="24" rx="3" fill="#2563eb"/>
+  <text x="322" y="331" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#334155">8 bytes (64 bits) — el decimal por defecto</text>
+
+  <!-- callouts: boolean and String don't fit the scale story -->
+  <rect x="40" y="365" width="330" height="75" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="56" y="388" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#334155">boolean</text>
+  <text x="56" y="408" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#475569">No tiene un tamaño fijo definido por el</text>
+  <text x="56" y="424" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#475569">lenguaje. Solo es true o false.</text>
+
+  <rect x="390" y="365" width="330" height="75" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="406" y="388" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#334155">String</text>
+  <text x="406" y="408" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#475569">No es primitivo, es una clase. Vive en el</text>
+  <text x="406" y="424" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#475569">heap (ver stack-heap-valor-referencia.svg).</text>
+</svg>
