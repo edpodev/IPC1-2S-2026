@@ -6,11 +6,6 @@ que practica **un solo concepto a la vez** de los que la práctica exige combina
 ciclos, `switch`, arreglos nativos (1D y 2D), `String`/`Character`, `Random`, búsqueda lineal,
 condicionales encadenadas y métodos.
 
-Varios ejemplos usan un dominio distinto al de la práctica a propósito (validar un nombre de usuario en
-vez de una placa, por ejemplo) y dejan partes sin resolver, marcadas con un comentario de sugerencia. La
-idea es entender el patrón y completarlo vos mismo, no copiarlo tal cual — el enunciado es explícito: las
-copias totales o parciales de código califican con 0 puntos, y durante la evaluación se te va a pedir
-explicar y modificar tu propio código.
 
 ## Mapa de la guía
 
