@@ -12,16 +12,16 @@ columnas y estados correctos) y al requisito técnico de usar **únicamente arre
 
 ```mermaid
 flowchart TD
-    A[fila = 0] --> B{fila < FILAS?}
-    B -- no --> Fin([Tablero listo])
-    B -- si --> C[columna = 0]
-    C --> D{columna < COLUMNAS?}
-    D -- no --> E[fila++]
+    A["fila = 0"] --> B{"fila menor que FILAS?"}
+    B -- no --> Fin(["Tablero listo"])
+    B -- si --> C["columna = 0"]
+    C --> D{"columna menor que COLUMNAS?"}
+    D -- no --> E["fila++"]
     E --> B
-    D -- si --> F{es borde?}
-    F -- si --> G[tablero = simbolo de borde]
-    F -- no --> H[tablero = simbolo interior]
-    G --> I[columna++]
+    D -- si --> F{"es borde?"}
+    F -- si --> G["tablero = simbolo de borde"]
+    F -- no --> H["tablero = simbolo interior"]
+    G --> I["columna++"]
     H --> I
     I --> D
 ```

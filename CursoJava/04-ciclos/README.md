@@ -1,6 +1,8 @@
 # Estructuras cíclicas
 
-Un ciclo es básicamente un `if` que, en lugar de seguir de largo después de ejecutar el bloque, vuelve a preguntar. Esa flecha que se devuelve es literalmente la única diferencia estructural — está dibujada en `../assets/condicional-vs-ciclo.svg` si quieren mostrarla en pantalla antes de meterse al código.
+Un ciclo es básicamente un `if` que, en lugar de seguir de largo después de ejecutar el bloque, vuelve a preguntar. Esa flecha que se devuelve es literalmente la única diferencia estructural:
+
+![Diagrama de flujo de un if, que evalúa la condición una sola vez, comparado con un while, que evalúa, ejecuta el bloque y regresa a evaluar de nuevo](../assets/condicional-vs-ciclo.svg)
 
 Las cuatro formas que cubrimos:
 

@@ -1,6 +1,8 @@
 # Matrices
 
-Una matriz en Java no es más que un arreglo de arreglos: un arreglo cuyos elementos son, a su vez, otros arreglos. Se accede con dos índices en vez de uno: `matriz[fila][columna]`. El diagrama `../assets/arreglo-vs-matriz.svg` lo pone lado a lado con el arreglo normal, para que quede claro que es la misma idea con un nivel más de anidamiento, no algo completamente nuevo.
+Una matriz en Java no es más que un arreglo de arreglos: un arreglo cuyos elementos son, a su vez, otros arreglos. Se accede con dos índices en vez de uno: `matriz[fila][columna]`. El siguiente diagrama lo pone lado a lado con el arreglo normal, para que quede claro que es la misma idea con un nivel más de anidamiento, no algo completamente nuevo.
+
+![Comparación entre un arreglo de una dimensión, accedido con un solo índice, y una matriz de dos dimensiones, accedida con fila y columna](../assets/arreglo-vs-matriz.svg)
 
 ```java
 int[][] tablero = {
@@ -26,7 +28,7 @@ Fíjense que uso `tablero[fila].length` y no `tablero[0].length` para el límite
 
 ## Formas de declarar una matriz
 
-Las mismas ideas de `07-arreglos/notas.md` aplican acá, solo que con un nivel más de anidamiento:
+Las mismas ideas de `07-arreglos/README.md` aplican acá, solo que con un nivel más de anidamiento:
 
 ```java
 // 1. Tamaño fijo, todo relleno con el valor por defecto (0 para int)

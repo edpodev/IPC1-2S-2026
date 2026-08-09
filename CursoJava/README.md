@@ -1,18 +1,18 @@
 # Curso de Java
 
-Estas son las notas que uso para dar el curso. Están separadas por tema porque en clase avanzamos uno a la vez, y no tiene sentido desplazarse por un archivo de mil líneas buscando dónde quedamos. Cada carpeta trae dos cosas: un `notas.md` con la explicación (para leer y comentar en vivo) y un `.java` completo que se corre tal cual, sin armar ningún proyecto.
+Estas son las notas que uso para dar el curso. Están separadas por tema porque en clase avanzamos uno a la vez, y no tiene sentido desplazarse por un archivo de mil líneas buscando dónde quedamos. Cada carpeta trae dos cosas: un `README.md` con la explicación (para leer y comentar en vivo) y un `.java` completo que se corre tal cual, sin armar ningún proyecto.
 
 ## Temas
 
-0. [Introducción a la memoria: stack y heap](00-introduccion-memoria/notas.md)
-1. [Tipos de datos](01-tipos-de-datos/notas.md)
-2. [Tipos de variables](02-tipos-de-variables/notas.md)
-3. [Estructuras condicionales](03-condicionales/notas.md)
-4. [Estructuras cíclicas](04-ciclos/notas.md)
-5. [Funciones](05-funciones/notas.md)
-6. [Procedimientos](06-procedimientos/notas.md)
-7. [Arreglos](07-arreglos/notas.md)
-8. [Matrices](08-matrices/notas.md)
+0. [Introducción a la memoria: stack y heap](00-introduccion-memoria/README.md)
+1. [Tipos de datos](01-tipos-de-datos/README.md)
+2. [Tipos de variables](02-tipos-de-variables/README.md)
+3. [Estructuras condicionales](03-condicionales/README.md)
+4. [Estructuras cíclicas](04-ciclos/README.md)
+5. [Funciones](05-funciones/README.md)
+6. [Procedimientos](06-procedimientos/README.md)
+7. [Arreglos](07-arreglos/README.md)
+8. [Matrices](08-matrices/README.md)
 
 ## Cómo correr el código
 
@@ -28,7 +28,7 @@ Con la extensión de Java para VS Code también aparece un botón "Run" arriba d
 
 ## assets/
 
-Ahí están los diagramas que uso para explicar lo que el código solo no termina de mostrar — sobre todo memoria (stack/heap) y diferencias entre estructuras que a primera vista se parecen demasiado. Cada `notas.md` enlaza al diagrama que le corresponde, pero acá va el resumen:
+Ahí están los diagramas que uso para explicar lo que el código solo no termina de mostrar — sobre todo memoria (stack/heap) y diferencias entre estructuras que a primera vista se parecen demasiado. Cada `README.md` enlaza al diagrama que le corresponde, pero acá va el resumen:
 
 - `stack-heap-valor-referencia.svg` — por qué copiar un `int` no es lo mismo que copiar un arreglo.
 - `tipos-primitivos-tamanos.svg` — cuánto espacio ocupa cada tipo primitivo, a escala.

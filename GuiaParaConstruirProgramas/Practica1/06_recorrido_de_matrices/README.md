@@ -22,15 +22,15 @@ dos índices, comparado contra el valor que representa "libre".
 
 ```mermaid
 flowchart TD
-    A[fila = 0] --> B{fila < filas?}
-    B -- no --> N[devolver false]
-    B -- si --> C[columna = 0]
-    C --> D{columna < columnas?}
-    D -- no --> E[fila++]
+    A["fila = 0"] --> B{"fila menor que filas?"}
+    B -- no --> N["devolver false"]
+    B -- si --> C["columna = 0"]
+    C --> D{"columna menor que columnas?"}
+    D -- no --> E["fila++"]
     E --> B
-    D -- si --> F{es libre?}
-    F -- si --> T[devolver true]
-    F -- no --> G[columna++]
+    D -- si --> F{"es libre?"}
+    F -- si --> T["devolver true"]
+    F -- no --> G["columna++"]
     G --> D
 ```
 

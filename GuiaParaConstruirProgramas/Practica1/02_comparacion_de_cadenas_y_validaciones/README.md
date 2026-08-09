@@ -13,12 +13,12 @@ validación ya resuelta para la placa.
 
 ```mermaid
 flowchart TD
-    A[texto recibido] --> B{longitud dentro de rango?}
-    B -- no --> Z[invalido]
-    B -- si --> C{primer caracter es letra?}
+    A["texto recibido"] --> B{"longitud dentro de rango?"}
+    B -- no --> Z["invalido"]
+    B -- si --> C{"primer caracter es letra?"}
     C -- no --> Z
-    C -- si --> D["? resto de caracteres (pendiente)"]
-    D --> V[valido]
+    C -- si --> D["pendiente: resto de caracteres"]
+    D --> V["valido"]
 ```
 
 ## `String` se comporta como una secuencia indexada

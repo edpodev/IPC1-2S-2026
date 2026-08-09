@@ -16,24 +16,24 @@ explicar y modificar tu propio código.
 
 ```mermaid
 flowchart LR
-    subgraph Base
-        M00[00 menu]
-        M01[01 arreglos 2D]
+    subgraph G1["Base"]
+        M00["00 menu"]
+        M01["01 arreglos 2D"]
     end
-    subgraph Datos y validacion
-        M02[02 cadenas y validaciones]
-        M03[03 generacion aleatoria]
-        M04[04 busqueda en arreglos]
+    subgraph G2["Datos y validacion"]
+        M02["02 cadenas y validaciones"]
+        M03["03 generacion aleatoria"]
+        M04["04 busqueda en arreglos"]
     end
-    subgraph Logica de negocio
-        M05[05 validaciones y cobro]
-        M06[06 recorrido de matrices]
-        M07[07 calculo de rutas]
+    subgraph G3["Logica de negocio"]
+        M05["05 validaciones y cobro"]
+        M06["06 recorrido de matrices"]
+        M07["07 calculo de rutas"]
     end
-    M08[08 metodos y modularizacion]
+    M08["08 metodos y modularizacion"]
+    Practica["Tu propia Practica 1"]
 
-    Base --> Datos y validacion --> Logica de negocio --> M08
-    M08 --> Practica[Tu propia Practica 1]
+    G1 --> G2 --> G3 --> M08 --> Practica
 ```
 
 ## Orden sugerido

@@ -10,12 +10,12 @@ métodos... evita repetición... no se acepta una solución desarrollada complet
 
 ```mermaid
 flowchart TD
-    M[main] --> A[calcularPromedio]
-    M --> B[contarAprobados]
-    M --> C[imprimirReporte]
-    A -.devuelve promedio.-> M
-    B -.devuelve aprobados.-> M
-    C -.usa promedio y aprobados.-> M
+    M["main"] --> A["calcularPromedio"]
+    M --> B["contarAprobados"]
+    M --> C["imprimirReporte"]
+    A -.->|"devuelve promedio"| M
+    B -.->|"devuelve aprobados"| M
+    C -.->|"usa promedio y aprobados"| M
 ```
 
 ## El mismo problema, de dos formas

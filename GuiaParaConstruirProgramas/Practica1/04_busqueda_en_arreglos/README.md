@@ -11,11 +11,11 @@ dependen de "recorrer todo el arreglo" e "informar adecuadamente cuando no exist
 
 ```mermaid
 flowchart TD
-    A[i = 0] --> B{i < arreglo.length?}
-    B -- no --> D[devolver -1]
-    B -- si --> C{arreglo i == buscado?}
-    C -- si --> E[devolver i]
-    C -- no --> F[i++]
+    A["i = 0"] --> B{"i menor que arreglo.length?"}
+    B -- no --> D["devolver -1"]
+    B -- si --> C{"arreglo en i es igual al buscado?"}
+    C -- si --> E["devolver i"]
+    C -- no --> F["i++"]
     F --> B
 ```
 

@@ -12,15 +12,15 @@ Corresponde a la sección **2.1 Inicialización, entrada/salida y menú** de la 
 
 ```mermaid
 flowchart TD
-    Inicio([Inicio]) --> Mostrar[Mostrar menu]
-    Mostrar --> Leer[Leer opcion]
-    Leer --> Switch{opcion}
-    Switch -->|1..6| Logica[Ejecutar la logica de esa opcion]
+    Inicio(["Inicio"]) --> Mostrar["Mostrar menu"]
+    Mostrar --> Leer["Leer opcion"]
+    Leer --> Switch{"opcion"}
+    Switch -->|"1 a 6"| Logica["Ejecutar la logica de esa opcion"]
     Logica --> Mostrar
-    Switch -->|7| Salir[continuarEjecucion = false]
-    Switch -->|otro| Invalida[Mensaje: opcion invalida]
+    Switch -->|"7"| Salir["continuarEjecucion = false"]
+    Switch -->|"otro"| Invalida["Mensaje: opcion invalida"]
     Invalida --> Mostrar
-    Salir --> Fin([Fin])
+    Salir --> Fin(["Fin"])
 ```
 
 ## Los tres conceptos que se combinan

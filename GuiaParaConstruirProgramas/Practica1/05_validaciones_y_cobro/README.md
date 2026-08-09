@@ -10,17 +10,17 @@ Se relaciona con la sección **2.2 Ingreso de vehículo, pago y cambio** de la r
 
 ```mermaid
 flowchart TD
-    A[dato valido?] -- no --> X1[mensaje de error]
-    A -- si --> B[posicion en rango?]
-    B -- no --> X2[mensaje de error]
-    B -- si --> C[espacio libre?]
-    C -- no --> X3[mensaje de error]
-    C -- si --> D[solicitar pago]
-    D --> E{monto negativo o insuficiente?}
-    E -- si --> F[mensaje, pedir de nuevo]
+    A["dato valido?"] -- no --> X1["mensaje de error"]
+    A -- si --> B["posicion en rango?"]
+    B -- no --> X2["mensaje de error"]
+    B -- si --> C["espacio libre?"]
+    C -- no --> X3["mensaje de error"]
+    C -- si --> D["solicitar pago"]
+    D --> E{"monto negativo o insuficiente?"}
+    E -- si --> F["mensaje, pedir de nuevo"]
     F --> D
-    E -- no --> G[pago aceptado]
-    G -.-> H["? calcular cambio (pendiente)"]
+    E -- no --> G["pago aceptado"]
+    G -.->|"pendiente"| H["calcular cambio"]
 ```
 
 ## Encadenar validaciones con `if / else if`

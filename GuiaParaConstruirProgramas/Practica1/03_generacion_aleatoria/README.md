@@ -12,12 +12,12 @@ técnico de usar `Random` para la generación de posiciones sobre el perímetro.
 
 ```mermaid
 flowchart TD
-    A[elegir lado al azar: 0-3] --> B{que lado?}
-    B -->|arriba| C[fila = 0, columna al azar sin esquinas]
-    B -->|abajo| D[fila = ultima, columna al azar sin esquinas]
-    B -->|izquierda| E[columna = 0, fila al azar sin esquinas]
-    B -->|derecha| F[columna = ultima, fila al azar sin esquinas]
-    C --> G[posicion generada]
+    A["elegir lado al azar (0 a 3)"] --> B{"que lado?"}
+    B -->|"arriba"| C["fila = 0, columna al azar sin esquinas"]
+    B -->|"abajo"| D["fila = ultima, columna al azar sin esquinas"]
+    B -->|"izquierda"| E["columna = 0, fila al azar sin esquinas"]
+    B -->|"derecha"| F["columna = ultima, fila al azar sin esquinas"]
+    C --> G["posicion generada"]
     D --> G
     E --> G
     F --> G

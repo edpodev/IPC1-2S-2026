@@ -1,6 +1,8 @@
 # Estructuras condicionales
 
-Todo lo que vemos acá se resume en una idea: el programa llega a un punto, hace una pregunta que solo puede responderse `true` o `false`, y según eso toma un camino u otro. Una sola vez, no se repite — esa es justo la diferencia con los ciclos del siguiente tema, y por eso vale la pena mirar `../assets/condicional-vs-ciclo.svg` cuando lleguemos allá: la única diferencia visual entre ambos diagramas es una flecha que se devuelve.
+Todo lo que vemos acá se resume en una idea: el programa llega a un punto, hace una pregunta que solo puede responderse `true` o `false`, y según eso toma un camino u otro. Una sola vez, no se repite — esa es justo la diferencia con los ciclos del siguiente tema, y por eso vale la pena mirar el diagrama de abajo cuando lleguemos allá: la única diferencia visual entre ambos diagramas es una flecha que se devuelve.
+
+![Diagrama de flujo de un if, que evalúa la condición una sola vez, comparado con un while, que evalúa, ejecuta el bloque y regresa a evaluar de nuevo](../assets/condicional-vs-ciclo.svg)
 
 Las formas que vamos a usar:
 
